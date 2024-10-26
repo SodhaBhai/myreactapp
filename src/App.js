@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
+import GoalList from './components/GoalList';
 
 const App = () => {
+
+  const courseGoals = [
+    {id: 'cg1' , text: 'Kuldeep'},
+    {id: 'cg2' , text: 'Singh'},
+    {id: 'cg3' , text: 'Sodha'},
+  ];
+
   return <div>
     <h2>Course Goal</h2>
-    <ul className="goal-list">
-      <li>Finish the course</li>
-      <li>Learn all about the course</li>
-      <li>Help our student in the Course</li>
-    </ul>
+    <GoalList goals={courseGoals}/>
   </div>;
 };
 
